@@ -1,5 +1,5 @@
 // Naikkan angka versi ini setiap kali index.html diganti
-const CACHE = "order-cepat-v1";
+const CACHE = "order-cepat-v2";
 const FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./icon-maskable-512.png"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
